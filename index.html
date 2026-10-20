@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff5eb">
+<title>Gửi mẹ yêu — 20/10</title>
+<style>
+  :root { --rose:#d95f70; --rose-dark:#a94555; --ink:#5b3d2c; --cream:#fff8ef; --paper:#fffaf4; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; color:var(--ink); background:var(--cream); font-family: Georgia, "Times New Roman", serif; }
+  .nav { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:18px clamp(18px,5vw,64px); background:#fffaf4ee; border-bottom:1px solid #f2dfd1; position:sticky; top:0; z-index:5; backdrop-filter:blur(10px); }
+  .brand { color:var(--ink); font-size:clamp(18px,2vw,25px); font-style:italic; text-decoration:none; white-space:nowrap; }
+  .brand span { color:var(--rose); margin-right:8px; }
+  .navlinks { display:flex; gap:clamp(12px,3vw,36px); flex-wrap:wrap; justify-content:flex-end; }
+  .navlinks a { color:var(--ink); text-decoration:none; font-size:15px; }
+  .navlinks a:hover { color:var(--rose); }
+  .hero { min-height:calc(100vh - 70px); display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:clamp(24px,5vw,70px); padding:clamp(28px,5vw,72px); max-width:1500px; margin:auto; }
+  .visual { position:relative; }
+  .visual img { display:block; width:100%; border-radius:22px; box-shadow:0 22px 65px #8a59422b; }
+  .visual-fallback { min-height:440px; border-radius:22px; background:linear-gradient(145deg,#ffe1d8,#fff6e9 55%,#f4b9bd); display:grid; place-items:center; text-align:center; padding:30px; }
+  .visual-fallback .flower { font-size:clamp(70px,12vw,150px); }
+  .visual-fallback p { font-size:clamp(24px,4vw,40px); font-style:italic; }
+  .letter { position:relative; background:var(--paper); border:1px solid #efc7bd; border-radius:24px 10px 24px 10px; padding:clamp(26px,4vw,52px); box-shadow:0 15px 45px #8a594214; }
+  .letter:before { content:""; position:absolute; inset:10px; border:1px dashed #efb4b3; border-radius:18px 7px 18px 7px; pointer-events:none; }
+  .eyebrow { color:var(--rose); text-transform:uppercase; letter-spacing:.14em; font-size:12px; font-weight:bold; }
+  h1 { font-size:clamp(34px,4vw,57px); line-height:1.12; font-weight:normal; margin:12px 0 22px; }
+  h1 em { color:var(--rose); }
+  .letter p { font-size:clamp(16px,1.5vw,19px); line-height:1.85; margin:0 0 15px; }
+  .signature { color:var(--rose-dark); font-style:italic; font-size:21px; text-align:center; margin-top:24px; }
+  .btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; border:0; border-radius:999px; padding:14px 24px; color:white; background:var(--rose); font-size:16px; cursor:pointer; box-shadow:0 8px 22px #d95f7038; transition:transform .2s, background .2s; }
+  .btn:hover { background:var(--rose-dark); transform:translateY(-2px); }
+  .actions { text-align:center; margin-top:28px; }
+  .wishes { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; max-width:1200px; margin:0 auto; padding:0 28px 50px; }
+  .wish { text-align:center; padding:20px 12px; border:1px solid #f0d7cb; background:#fffaf5; border-radius:18px; }
+  .wish .icon { font-size:28px; display:block; margin-bottom:8px; }
+  .wish strong { font-size:15px; font-weight:normal; }
+  .footer { text-align:center; padding:26px 16px 34px; color:#9c7764; border-top:1px solid #f0ded2; font-size:14px; }
+  .surprise { display:none; margin-top:20px; padding:18px; border-radius:16px; background:#fff0f0; border:1px solid #f2c5c8; line-height:1.8; animation:pop .4s ease; }
+  .surprise.show { display:block; }
+  .heart { position:fixed; z-index:9; pointer-events:none; animation:float 2.8s ease-out forwards; }
+  @keyframes float { from { transform:translateY(0) scale(.7) rotate(0); opacity:1; } to { transform:translateY(-85vh) scale(1.35) rotate(25deg); opacity:0; } }
+  @keyframes pop { from { transform:translateY(8px); opacity:0; } to { transform:translateY(0); opacity:1; } }
+  @media (max-width:800px) {
+    .nav { align-items:flex-start; flex-direction:column; }
+    .navlinks { justify-content:flex-start; gap:16px; }
+    .hero { grid-template-columns:1fr; padding:24px 18px 36px; min-height:auto; }
+    .visual { order:0; }
+    .letter { order:1; }
+    .wishes { grid-template-columns:repeat(2,1fr); padding:0 18px 34px; }
+  }
+  @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation:none!important; transition:none!important; } }
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top"><span>♥</span> Lời chúc 20/10</a>
+  <nav class="navlinks" aria-label="Điều hướng">
+    <a href="#top">Trang chủ</a><a href="#loi-chuc">Lời chúc</a><a href="#yeu-thuong">Yêu thương</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <div class="visual">
+      <img src="hoa-20-10.png" alt="Thiệp hoa và lời chúc mừng ngày 20/10 dành tặng mẹ"
+           onerror="this.style.display='none';document.getElementById('fallback').style.display='grid';">
+      <div id="fallback" class="visual-fallback" style="display:none">
+        <div><div class="flower">💐</div><p>Chúc mừng ngày<br><strong>20 tháng 10</strong></p><span>🌷 🌼 🌷</span></div>
+      </div>
+    </div>
+    <article class="letter" id="loi-chuc">
+      <div class="eyebrow">Dành tặng người con yêu nhất</div>
+      <h1>Gửi <em>mẹ yêu!</em> ♡</h1>
+      <p>Nhân ngày 20/10, con chúc mẹ luôn mạnh khỏe, vui vẻ và hạnh phúc. Cảm ơn mẹ vì đã luôn ở bên con, quan tâm, chăm sóc và yêu thương con mỗi ngày.</p>
+      <p>Con biết mẹ đã vất vả rất nhiều. Có thể con chưa thường xuyên nói ra, nhưng con luôn biết ơn những điều mẹ làm và tình yêu mẹ dành cho con.</p>
+      <p>Mong mẹ lúc nào cũng nở nụ cười, gặp thật nhiều điều tốt đẹp và luôn bình an. Con sẽ cố gắng trưởng thành hơn để mẹ yên lòng.</p>
+      <div class="signature">Con yêu mẹ rất nhiều! 💗</div>
+      <div class="actions">
+        <button class="btn" id="surpriseBtn" type="button">💌 Mở lời nhắn bí mật</button>
+        <div class="surprise" id="surprise">
+          Mẹ ơi, món quà này có thể nhỏ thôi, nhưng tình yêu con dành cho mẹ thì thật nhiều. Cảm ơn mẹ vì đã là mẹ của con. Chúc mẹ 20/10 thật vui — hôm nay và cả những ngày sau nữa! 🌷
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="wishes" id="yeu-thuong" aria-label="Những điều con mong dành cho mẹ">
+    <div class="wish"><span class="icon">🌷</span><strong>Luôn mạnh khỏe</strong></div>
+    <div class="wish"><span class="icon">☀️</span><strong>Mãi hạnh phúc</strong></div>
+    <div class="wish"><span class="icon">✨</span><strong>Mỗi ngày bình an</strong></div>
+    <div class="wish"><span class="icon">♡</span><strong>Luôn được yêu thương</strong></div>
+  </section>
+</main>
+<footer class="footer">Làm bằng tất cả tình yêu dành cho mẹ · 20/10 💗</footer>
+
+<script>
+  const button = document.getElementById('surpriseBtn');
+  const surprise = document.getElementById('surprise');
+  button.addEventListener('click', () => {
+    surprise.classList.toggle('show');
+    button.textContent = surprise.classList.contains('show') ? '💗 Đóng lời nhắn' : '💌 Mở lời nhắn bí mật';
+    if (surprise.classList.contains('show')) {
+      for (let i = 0; i < 14; i++) {
+        const heart = document.createElement('span');
+        heart.className = 'heart';
+        heart.textContent = ['💗','💕','🌸','♡'][Math.floor(Math.random()*4)];
+        heart.style.left = (8 + Math.random()*84) + 'vw';
+        heart.style.top = (55 + Math.random()*35) + 'vh';
+        heart.style.fontSize = (16 + Math.random()*18) + 'px';
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 2900);
+      }
+    }
+  });
+</script>
+</body>
+</html>
